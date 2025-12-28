@@ -1,0 +1,32 @@
+{
+  "name": "my-module",
+  "version": "0.0.1",
+  "author": "Abdul <abdulhakim.gafai@gmail.com>",
+  "description": "my-module",
+  "homepage": "https://github.com/babdulhakim2/test-project",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/babdulhakim2/test-project"
+  },
+  "bugs": {
+    "url": "https://github.com/babdulhakim2/test-project/issues"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@pgpm/faker": "0.15.5"
+  },
+  "devDependencies": {
+    "makage": "0.1.9",
+    "pgsql-test": "^2.18.15"
+  }
+}

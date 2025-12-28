@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=my-module
+%uri=my-module
+
+my-pets 2025-12-28T22:46:20Z constructive <constructive@5b0c196eeb62> # add my-pets

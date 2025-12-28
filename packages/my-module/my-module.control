@@ -1,0 +1,7 @@
+# my-module extension
+comment = 'my-module extension'
+default_version = '0.0.1'
+module_pathname = '$libdir/my-module'
+requires = 'pgpm-faker,pgpm-types,pgpm-verify,plpgsql,uuid-ossp'
+relocatable = false
+superuser = false
