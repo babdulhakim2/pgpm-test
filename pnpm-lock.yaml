@@ -57,6 +57,20 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
 
+  packages/my-module:
+    dependencies:
+      '@pgpm/faker':
+        specifier: 0.15.5
+        version: 0.15.5
+    devDependencies:
+      makage:
+        specifier: 0.1.9
+        version: 0.1.9
+      pgsql-test:
+        specifier: ^2.18.15
+        version: 2.20.0
+    publishDirectory: dist
+
 packages:
 
   '@babel/code-frame@7.27.1':
@@ -763,6 +777,15 @@ packages:
 
   '@octokit/types@13.10.0':
     resolution: {integrity: sha512-ifLaO34EbbPj0Xgro4G5lP5asESjwHracYJvVaPIyXMuiuXLlhic3S47cBdTb+jfODkTE5YtGCLt3Ay3+J97sA==}
+
+  '@pgpm/faker@0.15.5':
+    resolution: {integrity: sha512-knGzniLSvlzbaI7qKPAarTHR73MwPrpxFpi6TVm0oJ1smjQl5JvLFbWiZKQTubVN8ljx2hb+qB4HCDFCRxRvCw==}
+
+  '@pgpm/types@0.15.5':
+    resolution: {integrity: sha512-8kdjKAuLd2/sfR5AakMdVxwuhx8YOwoTm2bGRw/5v8o1JPi6SrRCPS0TvCN2RaD5GjPMasRNNURW8wHMv8FtCw==}
+
+  '@pgpm/verify@0.15.5':
+    resolution: {integrity: sha512-8+e1uYn9FYUKRFyewVRq0YHRZkZoUSJ/QbOczCZc7P9n1J4LJFLUSZNGvMz/nA1OKlanEAnjINnjzF0+krFT/g==}
 
   '@pgpmjs/core@4.5.0':
     resolution: {integrity: sha512-uWT9L2xANFKCj4H2XrUJm79SDyCW0LOBcUKxl8BfvFEBiEc5qGF3wXL8HFcXzV2TQ0DMd4f+uWAn7xnMgHmtLw==}
@@ -4864,6 +4887,17 @@ snapshots:
   '@octokit/types@13.10.0':
     dependencies:
       '@octokit/openapi-types': 24.2.0
+
+  '@pgpm/faker@0.15.5':
+    dependencies:
+      '@pgpm/types': 0.15.5
+      '@pgpm/verify': 0.15.5
+
+  '@pgpm/types@0.15.5':
+    dependencies:
+      '@pgpm/verify': 0.15.5
+
+  '@pgpm/verify@0.15.5': {}
 
   '@pgpmjs/core@4.5.0':
     dependencies:
