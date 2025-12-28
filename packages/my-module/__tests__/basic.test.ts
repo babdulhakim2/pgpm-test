@@ -29,7 +29,7 @@ it("should pass", async () => {
 
 it("should create a pet", async () => {
   const result = await pg.query(
-    "INSERT INTO my_pets.pets (name, age) VALUES ($1, $2) RETURNING *",
+    "INSERT INTO my_pets.pets (name, age) VALUES ($1, $2) RETURNING *`",
     ["Fido", 3]
   );
   console.log(result.rows);

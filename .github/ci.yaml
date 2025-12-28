@@ -17,8 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         package:
-          - your-module-1
-          - your-module-2
+          - my-module
 
     env:
       PGHOST: pg_db
@@ -71,9 +70,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'pnpm'
-      
+          node-version: "20"
+          cache: "pnpm"
+
       - name: Install
         run: pnpm install
 
@@ -91,4 +90,3 @@ jobs:
 
       - name: Test ${{ matrix.package }}
         run: cd ./packages/${{ matrix.package }} && pnpm test
-
