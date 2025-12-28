@@ -5,11 +5,10 @@
 </p>
 
 <p align="center" width="100%">
-  <a href="https://github.com/babdulhakim2/test-project/actions/workflows/ci.yml">
-    <img height="20" src="https://github.com/babdulhakim2/test-project/actions/workflows/ci.yml/badge.svg" />
+  <a href="https://github.com/babdulhakim2/pgpm-test/actions/workflows/ci.yml">
+    <img height="20" src="https://github.com/babdulhakim2/pgpm-test/actions/workflows/ci.yml/badge.svg" />
   </a>
 </p>
-
 
 ## Getting Started
 
